@@ -59,7 +59,7 @@ For term-vectors, indices represent term numbers and values.  For nearest neighb
 
 ## Running
 
-(soon)
+(one day, maybe)
 
 ### Command Line Options
 
@@ -73,11 +73,11 @@ for help running BH-SNE (and Q-SNE)
 
 ### Some Examples
 
-(soon)
+(one day, maybe)
 
 ## About the Algorithms
 
-(soon)
+(one day, maybe)
 
 ### APQ
 
