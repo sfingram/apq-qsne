@@ -1,10 +1,10 @@
-##apq-qsne
+## apq-qsne
 
 A collection of C/C++ code implementing the algorithms from the paper "[Dimensionality Reduction for Documents with Nearest Neighbor Queries](http://www.cs.ubc.ca/labs/imager/tr/2014/QSNE/)" by Ingram and Munzner, 2014.
 
 This includes the All-Pairs Query, or *APQ*, nearest-neighbor algorithm and the *Q-SNE*, dimensionality reduction algorithm.
 
-##Building
+## Building
 
 The code requires a C/C++ compiler.  I have successfully used both [clang](http://clang.llvm.org/) and [gcc](https://gcc.gnu.org/).
 
@@ -34,21 +34,21 @@ which will make the executable file `testapq.` For building BH-SNE with arbitrar
 
 As a fun bonus, there are some other executables you can build if you dig around in the makefile.
 
-##Input File Format
+## Input File Format
 
 APQ processes document _term-vectors_ into _nearest-neighbor_ files (both in `vec` format).
 
 QSNE processes nearest-neighbor files into _coordinate_ files (in `csv` file).
 
-###Term-Vector File Description
+### Term-Vector File Description
 
 Term vectors represent documents as a vector of term counts in a term vectors space.  Each dimension represents a different term and the value represents the [TFIDF](http://en.wikipedia.org/wiki/Tf%E2%80%93idf) weight of that term.  Because most terms don't appear in a given document, APQ expects _sparse_ vectors as input.
 
-###Nearest-Neighbor File Description
+### Nearest-Neighbor File Description
 
 APQ computes the approximate k most similar documents for each document in the input as well as the approximate [cosine distance](http://en.wikipedia.org/wiki/Cosine_distance) between the specified document pairs.
 
-###Vec File Format
+### Vec File Format
 
 Both term term vectors and nearest neighbors are stored in `vec` format.  Each line describes a document.
 
@@ -57,11 +57,11 @@ Both term term vectors and nearest neighbors are stored in `vec` format.  Each l
 ```
 For term-vectors, indices represent term numbers and values.  For nearest neighbors, indices represent document numbers.
 
-##Running
+## Running
 
 (soon)
 
-###Command Line Options
+### Command Line Options
 
 for help running the APQ algorithm
 
@@ -71,15 +71,15 @@ for help running BH-SNE (and Q-SNE)
 
 `tsne -?`
 
-###Some Examples
+### Some Examples
 
 (soon)
 
-##About the Algorithms
+## About the Algorithms
 
 (soon)
 
-###APQ
+### APQ
 
-###Q-SNE
+### Q-SNE
 
